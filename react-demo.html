@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react</title>
+    <script src="reactJs/react.js"></script>
+    <script src="reactJs/react-dom.js"></script>
+    <script src="reactJs/browser.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+<script type="text/babel">
+    var arr= ["aa", "bb" , "cc"];
+    var App = React.createClass({
+        render: function () {
+            return (
+                <div>
+                    {arr}
+                </div>
+            )
+        }
+    })
+    ReactDOM.render(<App/>,document.getElementById("app"))
+</script>
+</body>
+</html>
